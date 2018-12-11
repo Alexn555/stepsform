@@ -1,0 +1,122 @@
+{
+  "name": "Register form",
+  "url": "http://localhost:4200/register",
+  "urlMethod": "POST",
+  "currentStepId": 0,
+  "firstStepId": 0,
+  "lastStepId": 3,
+  "steps": [
+    {
+      "id": 0,
+      "name": "Register step 1 - base",
+      "enabled": true,
+      "formConfig": [
+         {
+           "type": "input",
+           "label": "register.base.firstName",
+            "name": "firstName",
+            "required": true,
+            "placeholder": "First name",
+            "validation": [{ "required": true, "min": 2, "max": 25 }]
+          },
+          {
+            "type": "input",
+            "label": "register.base.lastName",
+            "name": "lastName",
+            "placeholder": "Last name",
+            "required": true,
+            "validation": [{ "required": true, "min": 2, "max": 25 }]
+          },
+          {
+            "type": "email",
+            "label": "register.base.email",
+            "name": "email",
+            "placeholder": "Email",
+            "required": true,
+            "validation": [{ "required": true, "min": 3, "max": 25 }]
+          }
+        ]
+      },
+    {
+      "id": 1,
+      "name": "Register step 2 - profession",
+      "enabled": true,
+	    "formConfig": [
+        {
+         "type": "select",
+         "label": "register.profession.optionChoose",
+         "name": "profession-select",
+         "placeholder": "Select an option",
+         "translateOptions": true,
+          "options": [
+            "register.profession.optionDesign",
+            "register.profession.optionCode",
+            "register.profession.optionDeploy"
+          ],
+          "validation": [{"required": true}]
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Register step 3 - additional",
+      "enabled": true,
+	    "formConfig": [
+        {
+          "type": "input",
+          "label": "register.additional.street",
+          "name": "street",
+          "placeholder": "Street",
+          "validation": []
+        },
+        {
+          "type": "input",
+          "label": "register.additional.city",
+          "name": "city",
+          "placeholder": "City",
+          "validation": []
+        },
+         {
+          "type": "select",
+          "label": "register.additional.state",
+          "name": "state",
+          "placeholder": "State",
+          "translateOptions": true,
+           "options": [
+             "register.additional.stateOptions.estonia",
+             "register.additional.stateOptions.latvia",
+             "register.additional.stateOptions.usa",
+             "register.additional.stateOptions.iceland",
+             "register.additional.stateOptions.belgium",
+             "register.additional.stateOptions.sweden",
+             "register.additional.stateOptions.ecuador"
+           ],
+          "validation": []
+        },
+        {
+          "type": "number",
+          "min": 2,
+          "max": 7,
+          "label": "register.additional.zip",
+          "name": "zip",
+          "placeholder": "Zip",
+          "validation": []
+        }
+       ]
+    },
+    {
+      "id": 3,
+      "name": "Register step 4 - submit",
+      "enabled": true,
+      "formConfig": [
+          {
+            "type": "button",
+            "label": "register.submit.submitBtn",
+            "name": "submit-register-form",
+            "placeholder": "Submit",
+            "validation": []
+          }
+      ]
+    }
+  ]
+}

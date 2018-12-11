@@ -1,0 +1,30 @@
+
+<!-- Header navigation -->
+<app-register-header-navigation [currentStepId]="formStepsControl.currentStepId"></app-register-header-navigation>
+
+<ng-container *ngIf="formStepsControl.currentStepId === 0">
+  <app-register-base (formValidState)="formValidStateChange($event)"></app-register-base>
+</ng-container>
+
+<ng-container *ngIf="formStepsControl.currentStepId === 1">
+  <app-register-profession (formValidState)="formValidStateChange($event)"></app-register-profession>
+</ng-container>
+
+<ng-container *ngIf="formStepsControl.currentStepId === 2">
+  <app-register-additional (formValidState)="formValidStateChange($event)"></app-register-additional>
+</ng-container>
+
+<ng-container *ngIf="formStepsControl.currentStepId === 3">
+  <app-register-submit
+    [summaryFormObject]="
+   [formStepsControl.formBaseValues,
+   formStepsControl.formProfessionValues,
+   formStepsControl.formAdditionalValues]"
+                       (formValidState)="formValidStateChange($event)"></app-register-submit>
+</ng-container>
+
+<app-register-step-navigation [settings]="navButtonState"
+      (prevActionTaken)="prevButtonClicked($event)"
+      (nextActionTaken)="nextButtonClicked($event)"></app-register-step-navigation>
+
+

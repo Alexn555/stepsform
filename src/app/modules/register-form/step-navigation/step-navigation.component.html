@@ -1,0 +1,33 @@
+<div class="app-body access-center">
+  <main class="main d-flex align-items-center">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 mx-auto">
+
+          <div class="card mx-4">
+
+            <div class="card-body p-1 step-nav-block">
+
+              <button *ngIf="settings.prevVisible" class="btn btn-default step-nav-button"
+                      [disabled]="settings.prevDisabled"
+                      (click)="previousButtonClick()"
+                      name="previousBtn">
+                <i class="fas fa-arrow-left"></i>
+                <span> {{ 'register.stepBack' | translate }} </span>
+              </button>
+
+              <button *ngIf="settings.nextVisible" class="btn btn-success step-nav-button"
+                      [disabled]="settings.nextDisabled"
+                      (click)="nextButtonClick()"
+                      name="nextBtn">
+                <span> {{ 'register.stepNext' | translate}} </span>
+                <i class="fas fa-arrow-right"></i>
+              </button>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+</div>

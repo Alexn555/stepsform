@@ -1,0 +1,30 @@
+
+<div class="app-body access-center">
+  <main class="main d-flex align-items-center">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 mx-auto">
+
+          <div class="card mx-4">
+
+            <div class="card-header register-step-header">
+              <i class="fas fa-clipboard-list"></i> {{ 'register.submit.header' | translate }}
+            </div>
+
+            <div class="card-body p-4 complete-holder">
+
+              <p> {{ 'register.submit.body' | translate }}</p>
+              <dynamic-form
+                [config]="formattedConfig"
+                #form="dynamicForm"
+                (submit)="submit($event)">
+              </dynamic-form>
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+</div>

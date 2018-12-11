@@ -1,0 +1,33 @@
+
+<div class="app-body access-center">
+  <main class="main d-flex align-items-center">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 mx-auto">
+
+          <div class="card mx-4">
+            <div class="card-body p-1 header-navigation-holder">
+               <ul class="header-navigation" style="list-style: none;">
+                 <li>
+                    <i class="fas fa-address-book {{currentStepId >= 0 ? '' : 'inactive'}}"></i>
+                 </li>
+                  |
+                 <li>
+                   <i class="fas fa-play-circle {{currentStepId >= 1 ? '' : 'inactive'}}"></i>
+                 </li>
+                  |
+                 <li>
+                   <i class="fas fa-copy {{currentStepId >= 2 ? '' : 'inactive'}}"></i>
+                 </li>
+                  |
+                 <li>
+                   <i class="fas fa-clipboard-list {{currentStepId === 3 ? '' : 'inactive'}}"></i>
+                 </li>
+               </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+</div>

@@ -1,0 +1,55 @@
+{
+   "register": {
+     "header": "Registration form",
+     "stepNext": "Next",
+     "stepBack": "Previous",
+     "base": {
+        "header": "Please tell us about yourself",
+        "firstName": "First Name",
+        "lastName": "Last Name",
+        "email": "Email",
+        "validation": {
+          "firstName-required": "First Name is required",
+          "lastName-required": "Last Name is required",
+          "email-required": "Email is required"
+        }
+      },
+      "profession": {
+        "header": "What do you do?",
+        "optionChoose": "Choose profession",
+        "optionDesign": "Design",
+        "optionCode": "Code",
+        "optionDeploy": "Deploy"
+      },
+      "additional": {
+        "header": "Any additional information about yourself? (All optional)",
+        "street": "Street",
+        "city": "City",
+        "state": "State",
+        "stateOptions": {
+          "estonia": "Estonia",
+          "latvia": "Latvia",
+          "usa": "USA",
+          "iceland": "Iceland",
+          "belgium": "Belgium",
+          "sweden": "Sweden",
+          "ecuador": "Ecuador"
+        },
+        "zip": "Zip code"
+      },
+      "submit": {
+        "header": "Almost done",
+        "submitBtn": "Submit to complete form",
+        "body": "Please recheck if needed and submit",
+        "error": "Sorry something went wrong. Please try again",
+        "success": "Registration success!"
+      },
+     "error": {
+       "noDataFound": "No JSON Form data found!"
+     }
+    },
+    "error-page": {
+      "header": "404 Page not found",
+      "body": "Sorry, but we haven't found any page in this request."
+    }
+}

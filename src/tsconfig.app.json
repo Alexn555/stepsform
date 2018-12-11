@@ -1,0 +1,30 @@
+{
+  "extends": "../tsconfig.json",
+  "compilerOptions": {
+    "outDir": "../out-tsc/app",
+    "baseUrl": "./",
+    "module": "es2015",
+    "types": [],
+    "paths": {
+      "@angular/*": [
+        "../node_modules/@angular/*"
+      ],
+      "@shared/*": [
+        "../src/app/shared/*"
+      ],
+      "@common/*": [
+        "../src/app/modules/common/*"
+      ],
+      "@dynamic-form/*": [
+        "../src/app/modules/dynamic-form/*"
+      ],
+      "@register-form/*": [
+        "../src/app/modules/register-form/*"
+      ]
+    }
+  },
+  "exclude": [
+    "test.ts",
+    "**/*.spec.ts"
+  ]
+}

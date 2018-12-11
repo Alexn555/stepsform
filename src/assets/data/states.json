@@ -1,0 +1,10 @@
+{
+  "states": [
+	{ "id": 0, "name": "Estonia" },
+	{ "id": 1, "name": "Latvia" },
+	{ "id": 2, "name": "US" },
+	{ "id": 3, "name": "Iceland" },
+	{ "id": 4, "name": "Belgium" },
+	{ "id": 5, "name": "Sweden" }
+  ]
+}
