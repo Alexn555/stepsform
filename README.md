@@ -89,11 +89,11 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 	    Please open Chrome (tested in latest version of it) or Firefox <br/>
 		cmd -> npm run start  <br/>
 		Open link: localhost:4200  <br/>
-		
+		 <br/>
 		Now you should see the application  <br/>
 		Hope this progam will be useful for you, any ideas are ok  <br/>
 		<br/>
 	Version log:	 <br/>
-	 v 1.0.0 -> first stable version  <br/>
+	 v 1.0.0 -> first stable version 
 		
 		
